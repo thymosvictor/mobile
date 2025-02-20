@@ -3,86 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Viva Recife</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>App</title>
 </head>
 <body>
     <div class="navbar">
-       <div class="header-inner-content">
-        <h1 class="logo">VIVA<span>RECIFE</span></h1>
-        <nav class="navbar__itens">
-            <ul>
-                <li>Home</li>
-            </ul>
-            <ul>
-                <li>Sobre</li>
-            </ul>
-            <ul>
-                <li>Atrações</li>
-            </ul>
-            <ul>
-                <li>Conta</li>
-            </ul>
-        </nav>
-        <div class="nav-icon-container">
-            <img src="/img/menu.png"class="menu.button">
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo">
         </div>
-       </div> 
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Recife</span>
+        </div>
     </div>
-        
-    <header>
-        <div class="header--inner-content">
-            <div class="header-bottom-side">
-                <div class="header-bottom-side-left">
-                    <h2>Aproveite As Festas E Eventos Que Fazem a Cidade Pulsar!</h2>
-                    <p>
-                        Não perca a chance de viver a energia única de nossa capital! Festeje em Recife da melhor forma!
-                    </p>
-                    <button>Explore Agora  </button>
-                    
-                </div>
-                
-            </div>
-            <i class="fa-solid fa-arrow-down"></i>
-        </div> 
-    </header>
-    <main>
+
+    <header class="header">
+            <h1>Radar de<br>Eventos de<br> Tecnologia em<br> Recife
+            </h1>
+            <p>Nos comprometemos em informar sobre os melhores<br>eventos tecnológicos na capital.</p>
+
+        </header>
+
         <div id="container">
-           <div class="input-group">
-             <div class="input-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <div class="input-group">
+              <div class="input-icon">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+             </div>
+             
+             <input id="search" 
+             type="text" 
+             class="input-field" 
+             placeholder="Buscar evento ou data">
+         </div>
+ 
+    
+        <main>
             
-            <input id="search" 
-            type="text" 
-            class="input-field" 
-            placeholder="Pesquise uma data aqui">
-        </div>
+             <ul class="items">
+                 <li class="item-image">
+                     <div class="item-image">
+                        <img src="./img/recfiltro.png" alt="Rec'n'Play Pôster">
+                     </div>
+     
+                     <div class="item-content">
+                         <h2 class="item-title">
+                             Rec'n'Play
+                         </h2>
+     
+                         <p class="item-subtitle">
+                            <i class="fa-light fa-calendar-xmark"></i>
+                            Festival(2024) 
+                         </p>
 
-        <ul class="items">
-            <li class="item-image">
-                <div class="item-image">
-                   <img src="/img/carnavaldorecife.jpg" alt="Carnaval do Recife">
-                </div>
+                         <p class="item-description">
+                            Festival de tecnologia que reúne profissionais, estudantes e entusiastas da área de inovação. O evento promove palestras, workshops, hackathons e exposições, com o objetivo de fomentar o aprendizado, a troca de experiências e a colaboração entre diferentes setores da tecnologia.
+                         </p>
+                     </div>
+                 </li>
 
-                <div class="item-content">
-                    <h2 class="item-title">
-                        Carnaval do Recife
-                    </h2>
+                 <li class="item-image">
+                    <div class="item-image">
+                       <img src="./img/cnr.jpg" alt="Conecta Recife Pôster">
+                    </div>
+    
+                    <div class="item-content">
+                        <h2 class="item-title">
+                            Conecta Recife
+                        </h2>
+    
+                        <p class="item-subtitle">
+                            <i class="fa-light fa-calendar"></i>
+                           Encontro(2025) 
+                        </p>
 
-                    <p class="item-subtitle">
-                        
-                    </p>
-                </div>
-            </li>
-        </ul>
-    </div>
+                        <p class="item-description">
+                            Encontro que reunirá instituições públicas e privadas, academia, empresas de tecnologia e startups, além de profissionais de diversas áreas, para discutir temas como Inteligência Artificial, Transformação Digital, Marco Legal das Startups e os desafios dos municípios na era digital.
+                        </p>
+                    </div>
+                </li>
 
+                <li class="item-image">
+                    <div class="item-image">
+                       <img src="./img/cpb.jpg" alt="Campus Party Nordeste Pôster">
+                    </div>
+    
+                    <div class="item-content">
+                        <h2 class="item-title">
+                            Campus Party Nordeste
+                        </h2>
+    
+                        <p class="item-subtitle">
+                            <i class="fa-light fa-calendar-xmark"></i>
+                           Evento(2024) 
+                        </p>
 
-    </main>
+                        <p class="item-description">
+                           Um dos maiores eventos de tecnologia do Brasil,e a edição Nordeste visa fortalecer o ecossistema digital da região,reunindo jovens, profissionais, empresas e entusiastas do universo digital. O evento oferece palestras, workshops, hackathons, exposições e atividades voltadas para temas como programação, empreendedorismo, inteligência artificial, robótica, e-sports e muito mais.
+                        </p>
+                    </div>
+                </li>
+             </ul>
+         </div>
 
-    <!-- <script src="/script.js"></script> -->
+         <div id="container--b">
+            <div class="input--group">
+             </div>
+             
+             <input id="search-b" 
+             type="text" 
+             class="input--field" 
+             placeholder="Ver todos os eventos">
+         </div>
+ 
+        </main>
+        <script src="./script.js"></script>
 </body>
 </html>
