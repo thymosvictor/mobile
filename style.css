@@ -17,12 +17,14 @@ body {
     min-height: 100%;
 }
 .navbar {
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 0px 8px;
-    max-width: 100svh;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 .logo {
     display: flex;
@@ -31,10 +33,12 @@ body {
     font-size: 24px;
     font-weight: bold;
 }
+
 .logo img {
     width: 120px;
     margin-right: 10px;
 }
+
 .location {
     display: flex;
     align-items: center;
@@ -129,6 +133,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 12px;
 }
 
 .titulo {
@@ -209,13 +215,7 @@ body {
         background-color: black;
     }
     
-    main img {
-        width: 100px;
-        position: relative;
-        left: 15svh;
-        padding: 10px 5px;
-        top:2svh;
-    }
+
    
 
         .botoes {
@@ -228,19 +228,19 @@ body {
         .botoes__app-store{
             background-image: url(./img/app-store.png);
             background-size: cover;
-            width: 12.4svh;
+            width: 13.4svh;
             height: 4svh;
             border: none;
-            border-radius: 10%;
+            border-radius: 10px;
         }
 
         .botoes__play-store {
             background-image: url(./img/play-store.png);
             background-size: cover;
-            width: 12.4svh;
+            width: 13.4svh;
             height: 4svh;
             border: none;
-            border-radius: 10%;
+            border-radius: 10px;
         }
     
         
@@ -262,20 +262,127 @@ body {
         padding: 10px;
     }
     
-    footera {
-        color: ;
-        font-size: 24px; /* Tamanho do ícone */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        font-size: 24px; 
         text-decoration: none;
-    }
-    
-    footer a i {
-        transition: color 0.3s;
-    }
-    
-    footer a:hover i {
-        color: #ccc; /* Efeito de hover */
-    }
-    
-    
+        justify-content: space-evenly;
+        display: flex;
+        gap: 30px;
+        padding: 20px;
 
+    }
+
+    .icons {
+        display: flex;
+        gap: 15px;
+        font-size: 2px;
+        position: relative;
+        justify-content: space-evenly;
+    }
+    
+    .buttons {
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-top: 10px;
+        right: 60px;
+    }
+    
+    button {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        position: relative;
+        bottom: 10px;
+        justify-content: space-evenly;
+    }
+    
+    button i {
+        font-size: 16px;
+    }
+
+    @media (min-width: 901px) {
+        .navbar {
+            padding: 20px;
+            ;
+        }
+    
+        .logo img {
+            width: 120px;
+        }
+    
+        .header h1 {
+            font-size: 32px;
+        }
+    
+        .header p {
+            font-size: 18px;
+        }
+    
+        .eventos-container {
+            flex-wrap: wrap;
+        }
+    
+        .card {
+            width: calc(33.33% - 20px); 
+        }
+    
+        .botoes {
+            gap: 25px;
+        }
+    
+        .botoes__app-store, .botoes__play-store {
+            width: 15.4vw; 
+            height: 8svh;
+            position: relative;
+            bottom: 2vw
+            
+        }
+        .footer {
+            position: fixed; 
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 25px 0;
+            }
+        
+        .footer .icons {
+            font-size: 2.5rem; 
+            }
+        
+        .footer .buttons {
+            display: flex;
+            gap: 25px;
+            }
+        
+        .footer button {
+            font-size: 16px;
+            padding: 10px 20px;
+            }
+        
+        .main {
+            padding: 40px;
+            text-align: left;
+            }
+        
+        main img {
+            width: 150px; 
+            }
+        }
+    }
 
