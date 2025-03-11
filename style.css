@@ -13,7 +13,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000000;
     min-height: 100%;
 }
 .navbar {
@@ -359,16 +359,16 @@ body {
             display: flex;
             justify-content: space-evenly;
             padding: 25px 0;
-            }
+        }
         
         .footer .icons {
             font-size: 2.5rem; 
-            }
+        }
         
         .footer .buttons {
             display: flex;
             gap: 25px;
-            }
+        }
         
         .footer button {
             font-size: 16px;
@@ -378,11 +378,10 @@ body {
         .main {
             padding: 40px;
             text-align: left;
-            }
+        }
         
         main img {
             width: 150px; 
             }
         }
-    }
 
