@@ -24,22 +24,33 @@
       <div class="iconlg">
         <img src="../img/iconlg.png" alt="icone Reter" />
       </div>
+      <div class="reterlog">
+        <img src="../img/reterlog.png" alt="Titulo Reter" />
+      </div>
     </header>
 
     <div class="container">
       <h1>Login</h1>
       <p>Registre-se para entrar.</p>
 
-      <div class="input-box"></div>
-      <!-- Campo de e-mail (simulado) -->
-
-      <div class="input-box">
+      <div class="input-container">
+        <input class="input-log" type="text" placeholder="Insira seu nome de usuário" />
         <img
+          class="input-icon"
+          src=""
+          alt="Ícone senha"
+        />
+      </div>
+      <div class="input-container">
+        <input class="input-pin" type="password" placeholder="Insira sua senha" />
+        <img
+          class="input-icon"
           src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png"
           alt="Ícone senha"
         />
-        Insira sua senha
       </div>
+
+      
 
       <a href="#" class="forgot-password">Esqueci minha senha.</a>
 
@@ -48,13 +59,13 @@
       <div class="separator">Ou</div>
 
       <div class="google-login">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
-          alt="Google"
-        />
+          <img src="../img/google.png" >
       </div>
 
       <p class="register">Não possui uma conta? <a href="#">Cadastre-se.</a></p>
     </div>
+
+    <script src="./login.js"></script>
+
   </body>
 </html>
