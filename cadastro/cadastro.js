@@ -14,3 +14,4 @@ estados.forEach(estado => {
     option.textContent = estado;
     selectEstados.appendChild(option);
 });
+

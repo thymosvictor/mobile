@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #0b1114;
-  min-height: 100%;
+  height: 100%;
 }
 .navbar {
   width: 100%;
@@ -169,6 +169,7 @@ body {
   overflow: hidden;
   width: calc(50% - 10px);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
 }
 
 .card img {
@@ -184,6 +185,7 @@ body {
 .info h3 {
   font-size: 16px;
   margin: 5px 0;
+  color: black;
 }
 
 .info p,
@@ -207,7 +209,7 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  top: 12px;
+  top: 5px;
 }
 
 main {
@@ -223,7 +225,7 @@ main {
   height: 5svh;
 }
 
-.botoes__app-store {
+/* .botoes__app-store {
   background-image: url(./img/app-store.png);
   background-size: cover;
   width: 13.4svh;
@@ -239,7 +241,7 @@ main {
   height: 4svh;
   border: none;
   border-radius: 10px;
-}
+} */
 
 .conteudo {
   padding: 20px;
@@ -264,7 +266,7 @@ hr {
 }
 
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
