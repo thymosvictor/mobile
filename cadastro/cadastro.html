@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/iconlg.png">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastramento Reter App</title>
+</head>
+<body>
+    <header>
+        <div class="reterlog">
+            <img src="../img/reterlgbl.png" alt="Titulo Reter" />
+          </div>
+    </header>
+
+     <main class="container">
+        <p>Nome de usuário</p>
+        <div class="input-container">
+            <input class="input-user" type="text" />
+          </div>
+
+          <p>Seu melhor email</p>
+          <div class="input-container">
+            <input class="input-email" type="email" />
+          </div>
+          <p>Crie uma senha</p>
+          <div class="input-container">
+            <input class="input-senha" type="password" />
+          </div>
+          <p>Confirme sua senha</p>
+          <div class="input-container">
+            <input class="input-conf" type="password" />
+          </div>
+    </main> 
+
+    <form>
+        <p>Em que estado voce reside?</p>
+        <select id="estados" required></select>
+    </form>
+
+    <button type="submit">Cadastrar-se</button>
+        
+
+<script src="./cadastro.js"></script>
+
+</body>
+</html>
