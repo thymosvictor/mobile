@@ -40,7 +40,7 @@ body {
   right: 15px;
 }
 
-.location {
+/* .location {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,7 +50,7 @@ body {
 .location i {
   width: 18px;
   margin-right: 8px;
-}
+} */
 
 .header {
   position: relative;
