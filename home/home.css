@@ -12,6 +12,7 @@ body {
   font-family: Arial, sans-serif;
   background-color:white;
   height: 100%;
+  width:100%;
 }
 .navbar {
   width: 100%;
@@ -19,7 +20,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #1d2a2f;
-  padding: 10px 20px;
   box-sizing: border-box;
   max-width: 100%;
 }
@@ -36,7 +36,7 @@ body {
   margin-right: 10px;
   position: relative;
   top:5px;
-  right: 15px;
+  right: 80px;
 }
 
 .eventos {
@@ -102,37 +102,38 @@ footer {
     padding: 20px;
   }
 
-  .icons {
-    display: flex;
-    gap: 15px;
-    font-size: 2px;
+  .filtro-container {
     position: relative;
-    justify-content: space-evenly;
-  }
-  
-  .buttons {
-    display: flex;
-    position: relative;
-    justify-content: space-evenly;
-    gap: 25px;
-    margin-top: 10px;
-  }
-  
-  button {
-    background-color: #172124;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    position: relative;
-    bottom: 10px;
-    justify-content: space-evenly;
-  }
-  
-  button i {
-    font-size: 16px;
-  }
+    display: inline-block;
+}
+
+.filtro-opcoes {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 200px;
+}
+
+.filtro-opcoes select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.filtro-opcoes button {
+  width: 100%;
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filtro-opcoes button:hover {
+  background-color: #45a049;
+}
